@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* font-family: "Montserrat"; */
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+     font-family: 'Ubuntu', sans-serif;;
+  }
+  .card-container {
+    display: grid;
+    flex-wrap: wrap;
+    /* Initially, three columns */
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    column-gap: 10px;
+    background-color: blue;
+    justify-content: center;
+    justify-items: center;
+    /* Gap between items */
+  }
+
+  .card {
+    background-color: #ddd;
+    padding: 10px;
+    /* margin: 20px; */
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    /* Mobile view: switch to a single column */
+    .card-container {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 2fr;
+      background-color: red;
+    }
+  }
